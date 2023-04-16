@@ -3,6 +3,7 @@ import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
 import { WelcomeComponent } from './components/WelcomeComponent'
+import { ProductsComponent } from './components/ProductsComponent'
 
 function App() {
   const [count, setCount] = useState(0);
@@ -29,6 +30,9 @@ function App() {
         </button>
         <hr />
         {(count > 1000) && <WelcomeComponent usuarioActivo = {true}/>}
+        <br />
+        <hr />
+        <ProductsComponent />
       </div>
     </div>
   )
