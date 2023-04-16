@@ -2,6 +2,7 @@ import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
+import { WelcomeComponent } from './components/WelcomeComponent'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -13,6 +14,8 @@ function App() {
         <button onClick={() => setCount((count) => count + 1)}>
           Soy un contador {count}
         </button>
+        <hr />
+        <WelcomeComponent usuarioActivo={true} name="Cristian"/>
       </div>
     </div>
   )
